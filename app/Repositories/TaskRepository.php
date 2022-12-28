@@ -76,7 +76,7 @@ class TaskRepository implements TaskRepositoryInterface
     private function formatTaskList($tasks,$groupBy)
     {
      $outputList=[];
-     $endDate= Carbon::parse($this->formatEndDate($groupBy)->format('Y-m-d'));
+     $endDate= Carbon::parse($this->formatEndDate($groupBy));
    
      $statDate = Carbon::now();
      $stratDateMonth=$statDate->month;
